@@ -6,4 +6,4 @@ sql_file = open("populate.sql", "a")
 
 for _, row in df.iterrows():
     sql_file.write(sql_tmpl % (row['name'], row['rating'], row['region']))
-    #print(row)
+    print(row)
